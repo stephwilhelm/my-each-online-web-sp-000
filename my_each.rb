@@ -1,18 +1,8 @@
-def my_each(collection)
-  
+def my_each(words)
   i = 0
-
-  my_each(collection) do |i|
-    return i
-
+  while i < word.length
+    yield(word[i])
+    i = i + 1
   end
-    while i < collection.length
-      yield(collection[i])
-      i = i + 1
-    end
-    collection
+  word
 end
-
-my_each(words) do |item|
-  expect(item).to equal(words[counter])
-  counter+=1
