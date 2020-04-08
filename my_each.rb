@@ -1,5 +1,5 @@
 def my_each(collection)
-  empty_array = []
+  
   i = 0
 
   my_each(collection) do |i|
